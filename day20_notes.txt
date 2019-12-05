@@ -1,0 +1,42 @@
+# on '(' push loc on stack
+# on '|' restore loc from stack
+# on ')' restore and pop stack
+# on direction, offset location to get new loc, then
+# if new location not seen
+#  set new loc distance to loc distance plus one
+#  set location to new location
+# if new location seen:
+#  if not backtracking
+#   call self with reversed string and backtracking
+#  if backtracking,
+#   set distance to min of dist and backdist
+
+NES(E|)W
+
+0,0: 0
+0,-1: 1
+1,-1: 2
+1,0: 3
+0,0: 4
+
+N
+ XXXX
+ X  X
+XXX X
+ o  X
+ XXXX
+
+N(EW|WE)NNEEESSSSWWWN
+
+..??#??.#??..
+..?.|.?.|.?..
+..#–#_#?#-#..
+..?.|.|.|.?..
+..#–#?#?#-#..
+..?.|o?......
+..??#??.#-#..
+.............
+.............
+.............
+.............
+.............

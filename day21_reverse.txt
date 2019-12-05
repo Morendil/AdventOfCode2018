@@ -1,0 +1,31 @@
+e = 123
+e = e & 456
+e = e == 72 ? 1 : 0
+goto 6 if e == 1
+goto 1
+e = 0
+d = e | 65536
+e = 707129
+c = d & 255
+e = c + e
+e = e & 16777215
+e = e * 65899
+e = e & 16777215
+c = 256 > d ? 1 : 0
+goto 17 if c == 1
+goto 18
+goto 29
+c = 0
+b = c + 1
+b = b * 256
+b = b > d ? 1 : 0
+goto 24 if b == 1
+goto 25
+goto 27
+c = c + 1
+goto 19
+d = c
+goto 9
+c = a == e ? 1 : 0
+exit if c == 1
+goto 7
